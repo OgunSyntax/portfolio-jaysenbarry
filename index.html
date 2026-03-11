@@ -199,6 +199,12 @@
       gap: 2rem; align-items: start;
       transition: border-color 0.25s, background 0.25s, transform 0.25s;
       position: relative; overflow: hidden; cursor: none;
+      text-decoration: none;
+      color: inherit;
+    }
+    .project-card:link, .project-card:visited, .project-card:hover, .project-card:active {
+      text-decoration: none;
+      color: inherit;
     }
     .project-card::after {
       content: ''; position: absolute; inset: 0;
@@ -362,8 +368,9 @@
   <section id="projects">
     <div class="section-label" data-num="03">Projects</div>
     <h2 class="section-title">Things I've Built</h2>
+    <p style="margin:0 0 1.25rem; color: var(--muted); font-size:0.95rem;">For more completed work, check out my GitHub: <a href="https://github.com/OgunSyntax" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: underline;">github.com/OgunSyntax</a></p>
     <div class="projects-list">
-      <div class="project-card reveal">
+      <a href="https://github.com/TechoCrats/ShiftMate3.0" target="_blank" rel="noopener noreferrer" class="project-card reveal">
         <div>
           <div class="project-num">PROJECT / 001</div>
           <div class="project-name">ShiftMate 3.0 — Workforce Management System</div>
@@ -376,8 +383,8 @@
           <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Flask</span><span class="stack-tag">SQLAlchemy</span><span class="stack-tag">JWT</span><span class="stack-tag">Docker</span><span class="stack-tag">Pytest</span></div>
         </div>
         <div class="project-arrow">↗</div>
-      </div>
-      <div class="project-card reveal">
+      </a>
+      <a href="https://github.com/4idiots1brainelll/4idiots1braincell" target="_blank" rel="noopener noreferrer" class="project-card reveal">
         <div>
           <div class="project-num">PROJECT / 002</div>
           <div class="project-name">UWI Stat Platform — Academic Data Visualization</div>
@@ -389,8 +396,8 @@
           <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">SQLAlchemy</span><span class="stack-tag">Tailwind CSS</span><span class="stack-tag">Highcharts</span><span class="stack-tag">Render</span></div>
         </div>
         <div class="project-arrow">↗</div>
-      </div>
-      <div class="project-card reveal">
+      </a>
+      <a href="projects/discord-storage.html" target="_blank" rel="noopener noreferrer" class="project-card reveal">
         <div>
           <div class="project-num">PROJECT / 003</div>
           <div class="project-name">Discord-Based File Storage System</div>
@@ -402,8 +409,8 @@
           <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Discord API</span></div>
         </div>
         <div class="project-arrow">↗</div>
-      </div>
-      <div class="project-card reveal">
+      </a>
+      <a href="https://github.com/OgunSyntax/Hangman" target="_blank" rel="noopener noreferrer" class="project-card reveal">
         <div>
           <div class="project-num">PROJECT / 004</div>
           <div class="project-name">Hangman Android Game</div>
@@ -414,19 +421,7 @@
           <div class="project-stack"><span class="stack-tag">Java</span><span class="stack-tag">Android Studio</span><span class="stack-tag">Android SDK</span><span class="stack-tag">XML</span></div>
         </div>
         <div class="project-arrow">↗</div>
-      </div>
-      <div class="project-card reveal">
-        <div>
-          <div class="project-num">PROJECT / 005</div>
-          <div class="project-name">Systems &amp; Networking Experiments</div>
-          <ul class="project-bullets">
-            <li>Implemented process creation and synchronization using fork() and wait() in C</li>
-            <li>Built TCP and UDP client-server applications to study networking protocols and message exchange</li>
-          </ul>
-          <div class="project-stack"><span class="stack-tag">C</span><span class="stack-tag">C++</span><span class="stack-tag">Socket Programming</span></div>
-        </div>
-        <div class="project-arrow">↗</div>
-      </div>
+      </a>
     </div>
   </section>
 
